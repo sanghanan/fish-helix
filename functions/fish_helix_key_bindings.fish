@@ -271,7 +271,7 @@ function fish_helix_key_bindings --description 'helix-like key bindings for fish
         bind -s --preset -M $mode -m replace_one R repaint-mode
 
         # FIXME keep selection
-        bind -s --preset -M $mode ~ togglecase-selection
+        bind -s --preset -M $mode '~' togglecase-selection
         # FIXME ` and escape,`
 
         # FIXME .
@@ -299,7 +299,8 @@ function fish_helix_key_bindings --description 'helix-like key bindings for fish
         # FIXME ctrl-c
 
         ## Search
-        # FIXME
+        # History
+        bind -s --preset -M $mode / history-pager repaint-mode
 
         ## FIXME minor modes: g, m, space
 
